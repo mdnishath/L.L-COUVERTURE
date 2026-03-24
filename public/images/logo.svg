@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+  <!-- ═══ MOUNTAINS BACKGROUND ═══ -->
+  <path d="M100 160L160 90L220 140L280 70L340 130L380 160z" fill="#C0CCD8" opacity="0.5"/>
+  <path d="M80 160L140 100L190 140L240 85L300 135L360 95L400 160z" fill="#A0B0C0" opacity="0.4"/>
+  <!-- Snow caps -->
+  <path d="M160 90L150 105L170 105z" fill="#E8EDF2" opacity="0.7"/>
+  <path d="M280 70L268 88L292 88z" fill="#E8EDF2" opacity="0.7"/>
+  <path d="M360 95L350 110L370 110z" fill="#E8EDF2" opacity="0.6"/>
+
+  <!-- ═══ MAIN HOUSE / DOUBLE ROOF ═══ -->
+  <!-- Back roof (larger) -->
+  <path d="M240 65L140 160h200z" fill="#2D3748" stroke="#1A202C" stroke-width="2"/>
+  <!-- Back roof highlight -->
+  <path d="M240 65L190 112.5h100z" fill="#374151" opacity="0.6"/>
+
+  <!-- Front roof (main, navy blue) -->
+  <path d="M220 80L120 175h200z" fill="#1E3A5F" stroke="#152C4A" stroke-width="2.5"/>
+  <!-- Front roof highlight strip -->
+  <path d="M220 80L175 122h90z" fill="#2E5C8A" opacity="0.5"/>
+  <!-- Roof edge trim -->
+  <path d="M120 175L220 80L320 175" fill="none" stroke="#D4942A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- House wall -->
+  <rect x="150" y="175" width="140" height="50" fill="#E8EDF2" stroke="#D1D5DB" stroke-width="1"/>
+
+  <!-- Windows -->
+  <rect x="170" y="185" width="22" height="22" rx="2" fill="#1E3A5F" opacity="0.2" stroke="#9CA3AF" stroke-width="1"/>
+  <line x1="181" y1="185" x2="181" y2="207" stroke="#9CA3AF" stroke-width="0.8"/>
+  <line x1="170" y1="196" x2="192" y2="196" stroke="#9CA3AF" stroke-width="0.8"/>
+
+  <rect x="248" y="185" width="22" height="22" rx="2" fill="#1E3A5F" opacity="0.2" stroke="#9CA3AF" stroke-width="1"/>
+  <line x1="259" y1="185" x2="259" y2="207" stroke="#9CA3AF" stroke-width="0.8"/>
+  <line x1="248" y1="196" x2="270" y2="196" stroke="#9CA3AF" stroke-width="0.8"/>
+
+  <!-- Door -->
+  <rect x="207" y="195" width="26" height="30" rx="3" fill="#1E3A5F" opacity="0.15" stroke="#9CA3AF" stroke-width="1"/>
+  <circle cx="228" cy="212" r="2" fill="#D4942A"/>
+
+  <!-- Chimney -->
+  <rect x="260" y="100" width="16" height="35" rx="2" fill="#6B7280"/>
+  <rect x="257" y="96" width="22" height="6" rx="1.5" fill="#4B5563"/>
+
+  <!-- ═══ CROSSED TOOLS ═══ -->
+  <!-- Hammer -->
+  <g transform="translate(250, 40) rotate(-35)">
+    <!-- Handle -->
+    <rect x="-4" y="0" width="8" height="75" rx="3" fill="#B8860B"/>
+    <rect x="-3" y="5" width="6" height="65" rx="2" fill="#D4942A"/>
+    <!-- Head -->
+    <path d="M-18 -8h36c3 0 5 2 5 5v10c0 3-2 5-5 5h-36c-3 0-5-2-5-5v-10c0-3 2-5 5-5z" fill="#6B7280"/>
+    <path d="M-18 -8h36c3 0 5 2 5 5v5h-46v-5c0-3 2-5 5-5z" fill="#9CA3AF"/>
+    <!-- Claw -->
+    <path d="M15 7l8-15c1-2 0-4-2-3l-6 12" fill="#6B7280"/>
+  </g>
+
+  <!-- Carpenter's square / ruler -->
+  <g transform="translate(300, 55) rotate(35)">
+    <!-- Handle -->
+    <rect x="-3.5" y="0" width="7" height="70" rx="2" fill="#8B6914"/>
+    <rect x="-2.5" y="5" width="5" height="60" rx="1.5" fill="#A67C1A"/>
+    <!-- Ruler marks -->
+    <line x1="-2" y1="15" x2="2" y2="15" stroke="#6B5210" stroke-width="0.8"/>
+    <line x1="-2" y1="25" x2="2" y2="25" stroke="#6B5210" stroke-width="0.8"/>
+    <line x1="-2" y1="35" x2="2" y2="35" stroke="#6B5210" stroke-width="0.8"/>
+    <line x1="-2" y1="45" x2="2" y2="45" stroke="#6B5210" stroke-width="0.8"/>
+  </g>
+
+  <!-- ═══ TEXT ═══ -->
+  <!-- COUVERTURE -->
+  <text x="240" y="262" text-anchor="middle" font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="900" font-size="38" fill="#2D3748" letter-spacing="2">
+    COUVERTURE
+  </text>
+
+  <!-- L.L box -->
+  <rect x="185" y="272" width="110" height="32" rx="4" fill="#1E3A5F"/>
+  <text x="240" y="296" text-anchor="middle" font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="900" font-size="26" fill="#ffffff" letter-spacing="6">
+    L.L
+  </text>
+
+  <!-- Tagline -->
+  <text x="240" y="318" text-anchor="middle" font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="600" font-size="13" fill="#9CA3AF" letter-spacing="4">
+    CHARPENTE &amp; TOITURE
+  </text>
+
+  <!-- Decorative lines beside COUVERTURE -->
+  <line x1="60" y1="255" x2="130" y2="255" stroke="#D4942A" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="350" y1="255" x2="420" y2="255" stroke="#D4942A" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
