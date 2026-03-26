@@ -197,7 +197,7 @@ import { images as staticImages } from "@/data/images";
 
 const API_URL =
   process.env.WORDPRESS_API_URL ||
-  "http://couverture-jjm.local/wp-json/jjm/v1";
+  "https://api.llcouverture.com/wp-json/jjm/v1";
 
 // ─── Base Fetch with Error Handling ───
 

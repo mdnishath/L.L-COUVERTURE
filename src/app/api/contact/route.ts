@@ -156,7 +156,7 @@ export async function POST(request: NextRequest) {
     // Forward to WordPress REST API
     const wpApiUrl =
       process.env.WORDPRESS_API_URL ||
-      "http://couverture-jjm.local/wp-json/jjm/v1";
+      "https://api.llcouverture.com/wp-json/jjm/v1";
 
     try {
       const wpResponse = await fetch(`${wpApiUrl}/contact`, {
