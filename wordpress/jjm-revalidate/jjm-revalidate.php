@@ -37,6 +37,14 @@ class JJM_Revalidate {
         add_action('wp_update_nav_menu', [$this, 'on_menu_change']);
         add_action('updated_option', [$this, 'on_option_change'], 10, 1);
 
+        // Revalidate on media/image changes
+        add_action('add_attachment', [$this, 'on_media_change']);
+        add_action('edit_attachment', [$this, 'on_media_change']);
+        add_action('delete_attachment', [$this, 'on_media_change']);
+
+        // Revalidate when ACF fields are saved (if ACF is active)
+        add_action('acf/save_post', [$this, 'on_acf_save'], 20);
+
         // Admin settings page
         add_action('admin_menu', [$this, 'add_settings_page']);
         add_action('admin_init', [$this, 'register_settings']);
@@ -64,6 +72,35 @@ class JJM_Revalidate {
     public function on_content_delete($post_id) {
         $post = get_post($post_id);
         if (!$post) return;
+
+        $paths = $this->get_paths_for_post($post);
+        $this->trigger_revalidation($paths);
+    }
+
+    /**
+     * Triggered when media/images are added, edited, or deleted.
+     * Revalidates all pages since images can appear anywhere.
+     */
+    public function on_media_change($attachment_id) {
+        $this->trigger_revalidation([
+            '/',
+            '/services',
+            '/realisations',
+            '/a-propos',
+            '/contact',
+            '/devis',
+        ]);
+    }
+
+    /**
+     * Triggered when ACF fields are saved on any post.
+     */
+    public function on_acf_save($post_id) {
+        if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
+        if (wp_is_post_revision($post_id)) return;
+
+        $post = get_post($post_id);
+        if (!$post || $post->post_status !== 'publish') return;
 
         $paths = $this->get_paths_for_post($post);
         $this->trigger_revalidation($paths);
