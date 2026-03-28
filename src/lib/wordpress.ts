@@ -225,18 +225,14 @@ async function fetchAPI<T>(
 // Each function falls back to static data if WordPress is unavailable.
 
 export async function getSiteConfig(): Promise<SiteConfig> {
-  // Always use static config (new client data) until WP is updated
   const data = await fetchAPI<SiteConfig>("/site-config");
-  return {
-    ...staticSiteConfig,
-    heroImage: data?.heroImage || staticImages.hero,
-  } as SiteConfig;
+  if (data && data.businessName) return { ...data, heroImage: data.heroImage || staticImages.hero };
+  return { ...staticSiteConfig, heroImage: staticImages.hero } as SiteConfig;
 }
 
 export async function getServices(): Promise<Service[]> {
-  // Always use static services (new client data) until WP is updated
-
-  // Fallback: merge static services with images
+  const data = await fetchAPI<Service[]>("/services");
+  if (data && Array.isArray(data) && data.length > 0) return data;
   return staticServices.map((s) => ({
     ...s,
     image: staticImages.services[s.slug] || s.image,
@@ -246,22 +242,22 @@ export async function getServices(): Promise<Service[]> {
 export async function getServiceBySlug(
   slug: string
 ): Promise<Service | null> {
-  // Always use static services (new client data)
+  const data = await fetchAPI<Service>(`/services/${slug}`);
+  if (data && data.slug) return data;
   const service = staticServices.find((s) => s.slug === slug);
   if (!service) return null;
-  return {
-    ...service,
-    image: staticImages.services[service.slug] || service.image,
-  };
+  return { ...service, image: staticImages.services[service.slug] || service.image };
 }
 
 export async function getTestimonials(): Promise<Testimonial[]> {
-  // Always use static testimonials (new client data)
+  const data = await fetchAPI<Testimonial[]>("/testimonials");
+  if (data && Array.isArray(data) && data.length > 0) return data;
   return staticTestimonials;
 }
 
 export async function getProjects(): Promise<Project[]> {
-  // Always use static projects (new client data)
+  const data = await fetchAPI<Project[]>("/projects");
+  if (data && Array.isArray(data) && data.length > 0) return data;
   return staticProjects.map((p, i) => ({
     ...p,
     beforeImage: staticImages.projects.before[i] || p.beforeImage,
@@ -270,30 +266,26 @@ export async function getProjects(): Promise<Project[]> {
 }
 
 export async function getStats(): Promise<Stat[]> {
-  // Always use static stats (new client data)
+  const data = await fetchAPI<Stat[]>("/stats");
+  if (data && Array.isArray(data) && data.length > 0) return data;
   return staticStats;
 }
 
 export async function getZones(): Promise<string[]> {
-  // Always use static zones (new client data)
+  const data = await fetchAPI<string[]>("/zones");
+  if (data && Array.isArray(data) && data.length > 0) return data;
   return staticZones;
 }
 
 export async function getNavigation(): Promise<NavItem[]> {
-  // Always use static navigation
+  const data = await fetchAPI<NavItem[]>("/navigation");
+  if (data && Array.isArray(data) && data.length > 0) return data;
   return staticNavigation;
 }
 
 export async function getPageSections(slug: string): Promise<PageSection[]> {
   const data = await fetchAPI<PageSection[]>(`/pages/${slug}`);
-  if (data && Array.isArray(data)) {
-    // Keep section structure/order from WP but clear content
-    // so that component fallbacks (new client data) are used
-    return data.map((section) => ({
-      ...section,
-      content: {},
-    }));
-  }
+  if (data && Array.isArray(data)) return data;
   return [];
 }
 
