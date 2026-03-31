@@ -9,9 +9,9 @@ import {
 } from "@/lib/wordpress";
 
 export const metadata: Metadata = {
-  title: "À Propos | Couvreur à Pontoise depuis 15 Ans",
+  title: "À Propos | Couvreur à Arpajon — L.L COUVERTURE",
   description:
-    "L.L COUVERTURE, artisan couvreur à Pontoise (95) depuis 15 ans. Garantie décennale, équipe qualifiée, matériaux de qualité (95).",
+    "L.L COUVERTURE, artisan couvreur à Arpajon (91). Garantie décennale, équipe qualifiée, matériaux de qualité dans l'Essonne.",
   alternates: { canonical: "https://llcouverture.com/a-propos" },
 };
 

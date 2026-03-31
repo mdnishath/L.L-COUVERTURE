@@ -4,9 +4,9 @@ import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { getSiteConfig, getPageSections, getFormConfig } from "@/lib/wordpress";
 
 export const metadata: Metadata = {
-  title: "Devis Gratuit Couverture & Toiture Pontoise (95)",
+  title: "Devis Gratuit Couverture & Toiture Arpajon (91)",
   description:
-    "Demandez votre devis gratuit pour travaux de toiture à Pontoise (95). Réponse sous 24h, sans engagement. ☎ 06 41 26 02 59",
+    "Demandez votre devis gratuit pour travaux de toiture à Arpajon (91). Réponse sous 24h, sans engagement. ☎ 06 41 26 02 59",
   alternates: { canonical: "https://llcouverture.com/devis" },
 };
 

@@ -311,7 +311,7 @@ export async function getAppearance(): Promise<Appearance> {
 
   // Override WP appearance with new branding
   const brandFooter = {
-    description: "Expert en couverture, charpente et toiture à Pontoise. Qualité, fiabilité et savoir-faire au service de votre habitation.",
+    description: "Expert en couverture et charpente à Arpajon. Nous intervenons avec sérieux et précision pour protéger et valoriser votre habitation.",
     copyright: `© ${new Date().getFullYear()} L.L COUVERTURE. Tous droits réservés.`,
   };
 
@@ -351,7 +351,7 @@ export async function getAppearance(): Promise<Appearance> {
       headingColor: "#FFFFFF",
       linkColor: "#9CA3AF",
       linkHover: "",
-      description: "Expert en couverture, charpente et toiture à Pontoise. Qualité, fiabilité et savoir-faire au service de votre habitation.",
+      description: "Expert en couverture et charpente à Arpajon. Nous intervenons avec sérieux et précision pour protéger et valoriser votre habitation.",
       copyright: `© ${new Date().getFullYear()} L.L COUVERTURE. Tous droits réservés.`,
       showSocial: true,
       showServices: true,

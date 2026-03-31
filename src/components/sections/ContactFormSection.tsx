@@ -89,7 +89,7 @@ export default function ContactFormSection({
                 </h3>
                 <p className="text-white/80 text-sm mb-6">
                   Pour les urgences (fuites, dégâts après tempête), nous
-                  intervenons sous 24h dans tout le Pontoise.
+                  intervenons sous 24h dans toute l&apos;Essonne.
                 </p>
                 <a
                   href={`tel:${siteConfig.phoneRaw}`}

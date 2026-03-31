@@ -18,8 +18,8 @@ export default function ZoneIntervention({ zones, siteConfig, content, sectionSt
       <div className="max-w-7xl mx-auto px-4">
         <SectionTitle
           subtitle={(content?.subtitle as string) || "Zone d'Intervention"}
-          title={(content?.title as string) || "Nous Intervenons dans Tout Pontoise"}
-          description={(content?.description as string) || "Basés à Pontoise, nous couvrons l'ensemble du département de Pontoise et ses environs."}
+          title={(content?.title as string) || "Nous Intervenons dans Toute l'Essonne"}
+          description={(content?.description as string) || "Basés à Arpajon, nous couvrons l'ensemble du département de l'Essonne (91) et ses environs."}
           titleColor={sectionStyle?.titleColor}
           titleWeight={sectionStyle?.titleWeight}
           subtitleColor={sectionStyle?.subtitleColor}
@@ -74,7 +74,7 @@ export default function ZoneIntervention({ zones, siteConfig, content, sectionSt
 
               <div className="bg-primary/5 border border-primary/20 rounded-xl p-5">
                 <p className="text-sm text-gray-600">
-                  {(content?.footer_text as string) || "Votre ville n'est pas listée ? Contactez-nous ! Nous intervenons dans un rayon de 50 km autour de Pontoise."}
+                  {(content?.footer_text as string) || "Votre ville n'est pas listée ? Contactez-nous ! Nous intervenons dans un rayon de 50 km autour d'Arpajon."}
                 </p>
               </div>
             </div>

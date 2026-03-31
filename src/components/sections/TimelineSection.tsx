@@ -13,12 +13,12 @@ const timeline = [
   {
     year: "2009",
     title: "Création de l'Entreprise",
-    text: "Fondation de L.L COUVERTURE à Pontoise avec une vision claire : offrir un service de couverture d'exception.",
+    text: "Fondation de L.L COUVERTURE à Arpajon avec une vision claire : offrir un service de couverture d'exception.",
   },
   {
     year: "2013",
-    title: "Expansion à Pontoise",
-    text: "Extension de notre zone d'intervention à l'ensemble du département de Pontoise.",
+    title: "Expansion dans l'Essonne",
+    text: "Extension de notre zone d'intervention à l'ensemble du département de l'Essonne (91).",
   },
   {
     year: "2018",

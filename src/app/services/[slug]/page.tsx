@@ -46,11 +46,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return { title: "Service non trouvé" };
 
   return {
-    title: `${service.title} à Pontoise (95)`,
-    description: `${service.description} Artisan couvreur à Pontoise (95). Devis gratuit ☎ 06 41 26 02 59`,
+    title: `${service.title} à Arpajon (91)`,
+    description: `${service.description} Artisan couvreur à Arpajon (91). Devis gratuit ☎ 06 41 26 02 59`,
     alternates: { canonical: `https://llcouverture.com/services/${slug}` },
     openGraph: {
-      title: `${service.title} | L.L COUVERTURE - Pontoise (95)`,
+      title: `${service.title} | L.L COUVERTURE - Arpajon (91)`,
       description: service.description,
       type: "article",
       url: `https://llcouverture.com/services/${slug}`,
@@ -127,7 +127,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
 
                 <h2 className="text-3xl font-heading font-bold text-dark mb-6">
-                  {service.title} à Pontoise et dans le Pontoise
+                  {service.title} à Arpajon et dans l&apos;Essonne
                 </h2>
                 <p className="text-gray-500 leading-relaxed text-lg mb-8">
                   {service.description}

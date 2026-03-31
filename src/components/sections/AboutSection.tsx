@@ -166,7 +166,7 @@ export default function AboutSection({
               }}
             >
               {(content?.description as string) ??
-                "Depuis plus de 15 ans, L.L COUVERTURE accompagne les particuliers et professionnels de Pontoise dans tous leurs projets de couverture et charpente. Notre engagement : un travail soign\u00e9, des mat\u00e9riaux de qualit\u00e9 et le respect de vos exigences."}
+                "L.L COUVERTURE accompagne les particuliers et professionnels d\u0027Arpajon et de l\u0027Essonne dans tous leurs projets de couverture et charpente. Notre engagement : un travail soign\u00e9, des mat\u00e9riaux de qualit\u00e9 et le respect de vos exigences."}
             </p>
 
             {/* Checklist */}

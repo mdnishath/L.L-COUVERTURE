@@ -39,7 +39,7 @@ export default function Footer({
   const linkColor = footerSettings?.linkColor || textColor;
   const footerDescription =
     footerSettings?.description ||
-    "Expert en couverture, charpente et toiture à Pontoise. Qualité, fiabilité et savoir-faire au service de votre habitation.";
+    "Expert en couverture et charpente à Arpajon. Nous intervenons avec sérieux et précision pour protéger et valoriser votre habitation.";
   const copyright =
     footerSettings?.copyright ||
     `© ${new Date().getFullYear()} L.L COUVERTURE. Tous droits réservés.`;

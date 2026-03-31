@@ -65,7 +65,7 @@ export default function HeroSection({ siteConfig, content, formConfig, sectionSt
         <div className="absolute inset-0">
           <Image
             src={heroImage}
-            alt="Couvreur professionnel - toiture Pontoise"
+            alt="Couvreur professionnel - toiture Arpajon"
             fill
             className="object-cover"
             priority
@@ -89,7 +89,7 @@ export default function HeroSection({ siteConfig, content, formConfig, sectionSt
           >
             <span className="inline-flex items-center gap-2.5 px-5 py-2 bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-full text-accent text-sm font-heading font-bold uppercase tracking-widest">
               <Star size={14} className="fill-accent" />
-              {(content?.badge as string) ?? "Expert Couvreur \u00e0 Pontoise"}
+              {(content?.badge as string) ?? "Expert Couvreur \u00e0 Arpajon"}
             </span>
           </motion.div>
 
@@ -139,7 +139,7 @@ export default function HeroSection({ siteConfig, content, formConfig, sectionSt
             transition={{ duration: 0.7, delay: 0.35 }}
             className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl mx-auto"
           >
-            {(content?.description as string) ?? "Couverture, charpente et toiture \u00e0 Pontoise (95). Travail soign\u00e9, mat\u00e9riaux de qualit\u00e9 et devis gratuit sous 24h."}
+            {(content?.description as string) ?? "Couverture, charpente et toiture \u00e0 Arpajon (91). Travail soign\u00e9, mat\u00e9riaux de qualit\u00e9 et devis gratuit sous 24h."}
           </motion.p>
 
           {/* CTA Buttons */}

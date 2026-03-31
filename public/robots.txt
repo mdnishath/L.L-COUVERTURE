@@ -4,7 +4,7 @@ Allow: /
 Disallow: /api/
 
 # Host
-Host: https://couverture-jjm.fr
+Host: https://llcouverture.com
 
 # Sitemaps
-Sitemap: https://couverture-jjm.fr/sitemap.xml
+Sitemap: https://llcouverture.com/sitemap.xml

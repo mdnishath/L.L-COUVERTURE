@@ -19,17 +19,17 @@ export default function ServiceJsonLd({ name, description, slug }: ServiceJsonLd
       address: {
         "@type": "PostalAddress",
         streetAddress: "77 rue de l'Hermitage",
-        addressLocality: "Pontoise",
-        postalCode: "95300",
+        addressLocality: "Arpajon",
+        postalCode: "91290",
         addressRegion: "Île-de-France",
         addressCountry: "FR",
       },
     },
     areaServed: [
-      { "@type": "City", name: "Pontoise" },
-      { "@type": "City", name: "Cergy" },
-      { "@type": "City", name: "Osny" },
-      { "@type": "AdministrativeArea", name: "Pontoise (95)" },
+      { "@type": "City", name: "Arpajon" },
+      { "@type": "City", name: "Brétigny-sur-Orge" },
+      { "@type": "City", name: "Linas" },
+      { "@type": "AdministrativeArea", name: "Essonne (91)" },
     ],
   };
 

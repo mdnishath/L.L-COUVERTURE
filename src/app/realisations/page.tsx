@@ -9,9 +9,9 @@ import {
 } from "@/lib/wordpress";
 
 export const metadata: Metadata = {
-  title: "Réalisations Toiture Pontoise (95) — Avant / Après",
+  title: "Réalisations Toiture Arpajon (91) — Avant / Après",
   description:
-    "Découvrez nos réalisations de couverture, charpente et toiture à Pontoise (95). Photos avant/après de nos chantiers.",
+    "Découvrez nos réalisations de couverture, charpente et toiture à Arpajon (91). Photos avant/après de nos chantiers.",
   alternates: { canonical: "https://llcouverture.com/realisations" },
 };
 

@@ -4,9 +4,9 @@ import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import { getSiteConfig, getPageSections, getFormConfig } from "@/lib/wordpress";
 
 export const metadata: Metadata = {
-  title: "Contact Couvreur Pontoise — Devis Gratuit",
+  title: "Contact Couvreur Arpajon — Devis Gratuit",
   description:
-    "Contactez votre couvreur à Pontoise (95). Devis gratuit sous 24h. ☎ 06 41 26 02 59. Intervention rapide (95).",
+    "Contactez votre couvreur à Arpajon (91). Devis gratuit sous 24h. ☎ 06 41 26 02 59. Intervention rapide dans l'Essonne.",
   alternates: { canonical: "https://llcouverture.com/contact" },
 };
 

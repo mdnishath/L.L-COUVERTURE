@@ -8,9 +8,9 @@ import {
 } from "@/lib/wordpress";
 
 export const metadata: Metadata = {
-  title: "Nos Services de Couverture & Toiture à Pontoise (95)",
+  title: "Nos Services de Couverture & Toiture à Arpajon (91)",
   description:
-    "Couverture, charpente, zinguerie, isolation et étanchéité à Pontoise (95). Artisan couvreur qualifié. Devis gratuit ☎ 06 41 26 02 59",
+    "Couverture, charpente, zinguerie, isolation et étanchéité à Arpajon (91). Artisan couvreur qualifié. Devis gratuit ☎ 06 41 26 02 59",
   alternates: { canonical: "https://llcouverture.com/services" },
 };
 
